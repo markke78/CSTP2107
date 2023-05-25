@@ -1,0 +1,35 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+.bg{
+  background-image: url("./image/vecteezy_sugar-cotton-blue-clouds-vector-design-background-fluffy_8376225.jpg");
+  height:100%;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.App{
+  margin-top: 0;
+}
+
+
+
+
+
+
+
+
+
