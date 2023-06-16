@@ -7,7 +7,7 @@ import './App.css'
 function App() {
   let element = useRoutes([
     { path: '/', element: <HomePage /> },
-    { path: '/about', element: <MyFavorite /> },
+    { path: '/favorite', element: <MyFavorite /> },
     { path: '*', element: <NotFoundPage /> },
   ])
   return element

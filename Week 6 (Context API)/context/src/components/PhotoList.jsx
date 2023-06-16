@@ -8,13 +8,13 @@ export default function PhotoList() {
     const {allPhotos} = useContext(Context);
     console.log(allPhotos);
     const navigate = useNavigate();
-    const toComponentB=()=>{
-      navigate('/about',{state:allPhotos});
+    const toMyfavorite=()=>{
+      navigate('/favorite',{state:allPhotos});
     }
 
   return (
     <>
-    <button onClick={toComponentB}>Go to My Favorite</button>
+    <button onClick={toMyfavorite}>Go to My Favorite</button>
 
     <div className='photo-container'>
 
