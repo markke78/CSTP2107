@@ -2,6 +2,7 @@ import { useRoutes } from 'react-router-dom'
 import HomePage from './pages/HomePage'
 import MyFavorite from './pages/MyFavorite'
 import NotFoundPage from './pages/NotFoundPage'
+import { ContextProvider } from './context/Context'
 import './App.css'
 
 function App() {
@@ -10,7 +11,13 @@ function App() {
     { path: '/favorite', element: <MyFavorite /> },
     { path: '*', element: <NotFoundPage /> },
   ])
-  return element
+  return (
+    <ContextProvider>
+      {element}
+    </ContextProvider>
+    
+  )
+  
 }
 
 export default App;
