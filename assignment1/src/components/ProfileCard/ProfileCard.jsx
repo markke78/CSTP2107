@@ -13,8 +13,7 @@ const ProfileCard = ({data}) => {
                 </dif>
                 <p className="designation text-muted text-uppercase">
                     {data.email}
-                </p>
-                
+                </p>                
 
             </div>
 

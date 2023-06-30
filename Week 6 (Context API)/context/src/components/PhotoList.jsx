@@ -6,7 +6,6 @@ import './stytles.css';
 
 export default function PhotoList() {
     const {allPhotos} = useContext(Context);
-    console.log(allPhotos);
     const navigate = useNavigate();
     const toMyfavorite=()=>{
       navigate('/favorite',{state:allPhotos});
